@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya Punna - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        header .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        header .cta-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #00aaff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        header .cta-btn:hover {
+            background: #007acc;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            color: #4e54c8;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .education-list li,
+        .work-list li {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-card img {
+            width: 48px;
+            margin-bottom: 10px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-info a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #00aaff;
+            text-decoration: none;
+        }
+
+        .project-info a:hover {
+            text-decoration: underline;
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #4e54c8;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .social-links a:hover {
+            color: #00aaff;
+        }
+
+        footer {
+            text-align: center;
+            background: #4e54c8;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="hero">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm Divya Punna</h1>
+                <p>Python Developer | Machine Learning Enthusiast | Data Analyst</p>
+                <a href="#projects" class="cta-btn">Explore My Work</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="links">
+        <div class="container">
+            <h2>Connect with Me</h2>
+            <div class="social-links">
+                <a href="https://github.com/divya2507punna" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/punnadivya1234/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <ul class="education-list">
+                <li>
+                    <h3>Bachelor’s Degree in Electronics and Communication Engineering (ECE)</h3>
+                    <p>JNTUH University / Siddartha Institute of Science and Technology, Hyderabad (2016 - 2019)</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="work-experience">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <ul class="work-list">
+                <li>
+                    <h3>GO AI Associate - Amazon</h3>
+                    <p>October 2023 - March 2024 | Hyderabad</p>
+                    <ul>
+                        <li>Achieved a 20% reduction in expenses by implementing cost-effective strategies.</li>
+                        <li>Improved workflow efficiency by 25% through optimized processes.</li>
+                        <li>Collaborated with stakeholders to align objectives with organizational goals.</li>
+                        <li>Leveraged data-driven insights to enhance decision-making.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Associate - Wipro</h3>
+                    <p>March 2022 - October 2023 | Hyderabad</p>
+                    <ul>
+                        <li>Developed and executed test plans for software quality assurance.</li>
+                        <li>Identified and reported bugs, improving software performance by 95%.</li>
+                        <li>Adhered to SDLC methodologies for timely project delivery.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="tech-skills">
+        <div class="container">
+            <h2>Technical and Other Skills</h2>
+            <div class="skills">
+                <div class="skill-card">
+                    <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python">
+                    <h3>Python</h3>
+                    <p>Backend Development, Automation, and Data Science</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://img.icons8.com/color/48/000000/mysql.png" alt="MySQL">
+                    <h3>MySQL</h3>
+                    <p>Database Management and Optimization</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git">
+                    <h3>Git</h3>
+                    <p>Version Control and Collaboration</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://img.icons8.com/color/48/000000/task.png" alt="Machine Learning">
+                    <h3>Machine Learning</h3>
+                    <p>Generative AI, Video/Audio Applications</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://img.icons8.com/color/48/000000/microsoft-excel.png" alt="MS Excel">
+                    <h3>MS Excel</h3>
+                    <p>Data Analysis, Reporting, and Visualization</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://img.icons8.com/color/48/000000/linux.png" alt="Linux">
+                    <h3>Widows and Linux</h3>
+                    <p>Operating Systems Expertise</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Additional Skills</h3>
+                    <p>Leadership, Communication, Problem Solving, Teamwork, Critical Thinking, Flexibility</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x300" alt="QR Code Generator">
+                    <div class="project-info">
+                        <h3>QR Code Generator</h3>
+                        <p>A Python-based tool to generate customized QR codes. Built using the PyQRCode library.</p>
+                        <a href="https://github.com/divya2507punna/QR-Code-Generator-using-Python" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Smart Quiz Game">
+                    <div class="project-info">
+                        <h3>Smart Quiz Game</h3>
+                        <p>An interactive quiz game created with Python. Includes a database of questions
+                            and answers.</p>
+                            <a href="https://github.com/divya2507punna/smart-quiz-game" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/400x300" alt="Labelling and Crowdsourcing">
+                        <div class="project-info">
+                            <h3>Labelling and Crowdsourcing Tools</h3>
+                            <p>Worked on annotation projects to enhance machine learning datasets for video and audio applications.</p>
+                            <a href="https://github.com/divya2507punna" target="_blank">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="certifications">
+            <div class="container">
+                <h2>Certifications</h2>
+                <div class="certificate">
+                    <img src="static/psl_certificate.jpg" alt="PSL Certification - Frontlines EduTech">
+                    <p>Python, SQL, and Linux Certification - Frontlines EduTech</p>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials">
+            <div class="container">
+                <h2>What Others Say About Me</h2>
+                <div class="testimonials">
+                    <blockquote>
+                        <p>"Divya consistently delivers high-quality results and demonstrates a strong dedication to her work. Her problem-solving skills are exceptional."</p>
+                        <footer>— Former Manager, Amazon</footer>
+                    </blockquote>
+                    <blockquote>
+                        <p>"She is a reliable team player with excellent analytical abilities. Her contributions have greatly improved our processes."</p>
+                        <footer>— Team Lead, Wipro</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Divya Punna. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+    
+    </html>
+    
